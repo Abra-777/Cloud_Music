@@ -16,37 +16,32 @@ function renderizarMusica(informacion) {
     const li = document.createElement('li')
     li.setAttribute('class', 'song-item')
     li.innerHTML = `
-   
+    <img src="${informacion.image.url}">
     ${informacion.title} - ${informacion.author}
     `
 
 
-    li.addEventListener('click', function(){
+    li.addEventListener('click', function () {
         sonarcancion(informacion)
-    }
+    })
     contenedor.appendChild(li)
 
-
-
-
-}
-
-function sonarcancion(informacion){
-    alert(informacion.title)
 }
 
 
 
 
+function sonarcancion(informacion) {
+    const tiempo = document.getElementById('tiempo')
+    tiempo.setAttribute('src', informacion.audio.url)
+    
+    
+    document.getElementById('imagen').setAttribute('src', informacion.image.url)
 
-
-
-
-
-
-
-
-
+    document.getElementById('titulo').innerHTML = informacion.title
+    
+    document.getElementById('artista').innerHTML = informacion.author
+}
 
 
 axios.get("https://api.institutoalfa.org/api/songs")
