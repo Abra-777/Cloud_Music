@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="MiniReproductor.css">
+    <link rel="stylesheet" href="global.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+
+    <head>
+        <div class="principal">
+            <h1>
+                <img src="/assets/Single.svg" alt="">
+                Cloud Music
+            </h1>
+            <div class="extensiones">
+                <ul>
+                    <li><img src="/assets/user_voice.svg" alt="">Artistas </li>
+                    <li> <img src="/assets/user_voice.svg" alt="">Albumes</li>
+                    <li> <img src="/assets/folder_open.svg" alt="">Reproducidas Recientemente</li>
+                </ul>
+            </div>
+
+            <div class="minirepro">
+                <img class="imgnn" src="/assets/image 20.png" alt="" id="imagen">
+                <div class="artisttaytit">
+                    <p id="titulo">titulo</p>
+                    <p id="artista">artistta</p>
+                </div>
+                <audio class="controlaud" controls id="tiempo" autoplay></audio>
+                <div class="controles">
+
+                    
+                    <button><img class="botonn" src="/assets/shuffle.svg" alt=""></button>
+                    <button><img class="botonn" src="/assets/Group.svg" alt=""></button>
+                    <button><img class="botonn1" src="/assets/play button.svg" alt=""></button>
+                    <button><img class="botonn" src="/assets/Group (1).svg" alt=""></button>
+                    <button><img class="botonn" src="/assets/repeat.svg" alt=""></button>
+                </div>
+            </div>
+        </div>
+    </head>
+
+    <div>
+        <h1 class="welcome-message">¡Bienvenido a tu reproductor de música!</h1>
+
+    </div>
+
+    <div class="player-container">
+        <div class="playlist-container">
+            <h2 class="playlist-title">Playlist</h2>
+            <ul class="song-list" id="contenedor">
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="/main.js"></script>
+</body>
+
+</html>
