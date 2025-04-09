@@ -22,7 +22,7 @@
                 <img src="/assets/Single.svg" alt="">
                 Cloud Music
             </h1>
-            <div>
+            <div class="extensiones">
                 <ul>
                     <li><img src="/assets/user_voice.svg" alt="">Artistas </li>
                     <li> <img src="/assets/user_voice.svg" alt="">Albumes</li>
@@ -37,6 +37,9 @@
                     <p>artistta</p>
                 </div>
                 <div class="controles">
+
+                    <audio src=""></audio>
+                    
                     <button><img class="botonn" src="/assets/shuffle.svg" alt=""></button>
                     <button><img class="botonn" src="/assets/Group.svg" alt=""></button>
                     <button><img class="botonn1" src="/assets/play button.svg" alt=""></button>
@@ -47,25 +50,6 @@
         </div>
     </head>
 
-
-    <div class="List-songs" id="contenedor">
-        <div>
-            <img src="/assets/image 20.png" alt="">
-            <p>titulo</p>
-            <p>artistta</p>
-        </div>
-        <div>
-            <img src="/assets/image 20.png" alt="">
-            <p>titulo</p>
-            <p>artistta</p>
-        </div>
-        <div>
-            <img src="/assets/image 20.png" alt="">
-            <p>titulo</p>
-            <p>artistta</p>
-        </div>
-    </div>
-
     <div>
         <h1 class="welcome-message">¡Bienvenido a tu reproductor de música!</h1>
 
@@ -74,7 +58,7 @@
     <div class="player-container">
         <div class="playlist-container">
             <h2 class="playlist-title">Playlist</h2>
-            <ul class="song-list">
+            <ul class="song-list" id="contenedor">
                 <li class="song-item">Canción 1 - Artista 1</li>
                 <li class="song-item">Canción 2 - Artista 2</li>
                 <li class="song-item">Canción 3 - Artista 3</li>
@@ -82,13 +66,6 @@
             </ul>
         </div>
     </div>
-
-
-
-
-
-
-
 
 
     <script src="/main.js"></script>

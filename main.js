@@ -13,25 +13,39 @@ function peticion(informacion) {
 
 
 function renderizarMusica(informacion) {
-    const div = document.createElement('div')
-    // div.setAttribute
-
-    div.innerHTML = `
-        <img src="/assets/image 20.png" alt="">
-            <p>titulo</p>
-            <p>artistta</p>
+    const li = document.createElement('li')
+    li.setAttribute('class', 'song-item')
+    li.innerHTML = `
+   
+    ${informacion.title} - ${informacion.author}
     `
 
 
+    li.addEventListener('click', function(){
+        sonarcancion(informacion)
+    }
+    contenedor.appendChild(li)
 
-
-
-
-contenedor.appendChild(div)
 
 
 
 }
+
+function sonarcancion(informacion){
+    alert(informacion.title)
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
